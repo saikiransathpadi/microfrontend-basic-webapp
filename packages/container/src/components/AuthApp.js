@@ -14,6 +14,7 @@ export const AuthApp = ({onSignIn}) => {
             },
             onSignIn: () => {
                 onSignIn()
+                history.push('/')
             }
         });
         history.listen(onParentNavigate);
